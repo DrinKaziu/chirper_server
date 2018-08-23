@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const errorHandler = require("./handlers/error");
 const authRoutes = require("./routes/auth");
+const db = require("./models");
 const messagesRoutes = require("./routes/messages");
 const { loginRequired, ensureCorrectUser } = require("./middleware/auth")
 
